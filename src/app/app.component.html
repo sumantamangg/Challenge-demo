@@ -1,33 +1,5 @@
 <div class="colors">
   <h1>Colors</h1>
-  <div>
-    <div class="subColors">
-      <h3><b>General</b></h3>
-    </div>
-      <mat-grid-list cols="4" rowHeight="2:1" gutterSize="20px">
-        <mat-grid-tile *ngFor="let item of general.value"
-          [ngStyle]="{'background-color': item.value ? item.value : 'lightblue'}">
-            <p [ngStyle]="{'color': item.textColor ? item.textColor: 'grey'}">{{item.name}}</p>
-          <mat-grid-tile-footer style="background-color: transparent;">
-            <p [ngStyle]="{'color': item.textColor ? item.textColor: 'grey'}">{{item.value}}</p>
-          </mat-grid-tile-footer>
-        </mat-grid-tile>
-      </mat-grid-list>
-  </div>
-  <!-- dddd -->
-  <div>
-    <div class="subColors">
-      <h4><b>Primary</b></h4>
-    </div>
-    <mat-grid-list cols="4" rowHeight="2:1" gutterSize="20px">
-      <mat-grid-tile 
-        *ngFor="let item of primary.value"
-        [ngStyle]="{'background-color': item.value ? item.value : 'lightblue'}">
-          <p [ngStyle]="{'color': item.textColor ? item.textColor: 'grey'}">{{item.name}}</p>
-        <mat-grid-tile-footer style="background-color: transparent;">
-          <p [ngStyle]="{'color': item.textColor ? item.textColor: 'grey'}">{{item.value}}</p>
-        </mat-grid-tile-footer>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </div>
+    <app-colors [colorProfile]="general"></app-colors>
+    <app-colors [colorProfile]="primary"></app-colors>
 </div>

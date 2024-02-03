@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { General } from '../assets/colors.data';
 import { Primary } from '../assets/colors.data';
+import { ColorsComponent } from './colors/colors.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatGridListModule],
+  imports: [CommonModule, RouterOutlet, MatGridListModule, ColorsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
