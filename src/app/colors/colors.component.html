@@ -4,6 +4,7 @@
 </div>
 <mat-grid-list cols="4" rowHeight="2:1" gutterSize="20px">
   <mat-grid-tile 
+    class="rounded-tile"
     *ngFor="let item of colorProfile.value"
     [ngStyle]="{'background-color': item.value ? item.value : 'lightblue'}">
       <p [ngStyle]="{'color': item.textColor ? item.textColor: 'grey'}">
