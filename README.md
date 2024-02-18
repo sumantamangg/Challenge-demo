@@ -1,5 +1,5 @@
 # MockupApp
-
+This example showcases how to reuse component using child-parent component.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
 ## Development server
